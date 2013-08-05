@@ -14,8 +14,10 @@ all set!
 Instructions:
     1. Install Python2.7 or Python3.2 for your platform
          * http://python.org/download/
-    2. Open a console (cmd.exe) with Administrator rights
-    3. Run bootstrap27.bat or bootstrap32.bat from the console
+    2. Download this project as a zip file through GitHub
+    3. Unzip the zip file
+    4. Open a console (cmd.exe) with Administrator rights
+    5. Run bootstrap27.bat or bootstrap32.bat from the console
 
 Installs:
     * distribute
