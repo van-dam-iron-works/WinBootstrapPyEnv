@@ -1,5 +1,0 @@
-wget is only used to download the distribute bootstrap script. Including it as 
-a binary makes things a whole lot easier.
-
-The source code for version 1.10.2 of wget can be found at 
-http://ftp.gnu.org/gnu/wget/

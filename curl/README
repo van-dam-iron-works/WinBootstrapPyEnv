@@ -1,0 +1,4 @@
+curl (with SSL) is used to download the Python installer, the PyWin32 
+installer, and the setuptools bootstrap script.
+
+The source code and downloads for curl can be found at http://curl.haxx.se/

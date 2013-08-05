@@ -2,24 +2,30 @@ WinBootstrapPyEnv
 =================
 
 WinBootstrapPyEnv is a collection of scripts and binaries that can be used to 
-install a reasonable Python environment into WindowsXP or Windows7. It 
-currently requires you to manually install Python2.7 or Python3.2 before the 
-rest of the script will work.
+install a reasonable Python environment into Windows. Currently only 64bit 
+Windows7 with Python2.7, PYthon3.2, or Python3.3 are supported.
 
-The script will use wget to download distribute's bootstrap script, which is 
-then used to install distribute. It will then use easy_install to install pip.
-Finally, it will use pip to install virtualenv. At that point you should be 
-all set!
+The script uses curl to download a Python installer, a PyWin32 installer, and 
+setuptool's bootstrap script (ez_install). Python and PyWin32 are installed, 
+followed by running the setuptools bootstrap script. easy_install is then used 
+to install pip, and finally, pip is used to install virtualenv.
 
 Instructions:
-    1. Install Python2.7 or Python3.2 for your platform
-         * http://python.org/download/
-    2. Download this project as a zip file through GitHub
-    3. Unzip the zip file
-    4. Open a console (cmd.exe) with Administrator rights
-    5. Run bootstrap27.bat or bootstrap32.bat from the console
+    1. Download this project as a zip file from GitHub.
+    2. Unzip the zip file.
+    3. Open a console (cmd.exe) with Administrator rights.
+    4. Run the bootstrap.bat file for the Python version and CPU architecture
+       you need.
+    5. Run the installer GUIs as they appear.
+
+Notes:
+    * If you do not run cmd as Administrator, you will have to verify admin 
+      rights for the Python and PyWin32 installers. You will also have to 
+      manually clean up the PyWin32 installer. 
 
 Installs:
-    * distribute
+    * Python2.7, or Python3.2, or Python3.3
+    * PyWin32
+    * setuptools
     * pip
     * virtualenv
